@@ -29,6 +29,23 @@ This project also involves deployment using AWS EC2, where I deployed the backen
 
 - **Process Manager**: PM2 (for managing the app in production)
 
+### Automated Testing with Postman & Newman
+As part of my learning journey, I also practiced automated testing using Postman and Newman.
+
+Postman provides a user-friendly interface to manually test the API, while Newman allows you to run the Postman collections in the command line for automated testing.
+
+Prerequisites
+- Postman installed on your machine (for manual testing).
+- Newman installed globally to run Postman collections from the command line.
+
+**Installation for Newman**
+1. To install Newman globally, use the following command:
+   ```bash
+   npm install newman -g
+
+2. Running Automated Tests
+   ```bash
+   newman run notes-api-test.postman_collection.json --environment notes-api-test.postman_environment.json
 
 ## API Endpoints
 
